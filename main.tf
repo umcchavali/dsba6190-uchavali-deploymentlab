@@ -45,7 +45,7 @@ resource "azurerm_subnet" "subnet" {
   service_endpoints    = ["Microsoft.Sql", "Microsoft.Storage"]
 }
 
-// Storage Account
+// Storage Accounts
 
 resource "azurerm_storage_account" "storage" {
   name                     = "sto${var.class_name}${var.student_name}${var.environment}${random_integer.deployment_id_suffix.result}"
