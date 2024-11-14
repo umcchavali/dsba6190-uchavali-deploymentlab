@@ -76,7 +76,7 @@ resource "azurerm_mssql_database" "db" {
   license_type = "LicenseIncluded"
   max_size_gb  = 2
   sku_name     = "S0"
-  enclave_type = "VBS"
+  enclave_type = "Basic"
 
   tags = local.tags
 }
